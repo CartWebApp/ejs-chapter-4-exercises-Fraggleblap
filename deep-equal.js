@@ -1,5 +1,10 @@
 function deepEqual(value, reference) {
   // Add code.
+  if (value === reference && reference != null) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 

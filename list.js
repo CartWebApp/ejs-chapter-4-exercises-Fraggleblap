@@ -1,5 +1,12 @@
 function arrayToList(arr) {
   // Add code.
+  let list = {
+    value: arr[0],
+    rest: {
+      value: arr[1]
+    }
+  }
+  return list;
 }
 
 function listToArray(list, arr) {
