@@ -11,8 +11,11 @@ function arrayToList(arr) {
 
 function listToArray(list, arr) {
   // Add code.
-  arr = Object.keys(list);
-  return arr;
+  let tempArr = [];
+  for (let node = list; node; node = node.rest) {
+    tempArr.push(node.value);
+  }
+  return tempArr;
 }
 
 // tests
