@@ -1,6 +1,6 @@
 function deepEqual(value, reference) {
   // Add code.
-  if (value === reference && reference != null) {
+  if (JSON.stringify(value) == JSON.stringify(reference)) {
     return true;
   } else {
     return false;

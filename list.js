@@ -11,6 +11,8 @@ function arrayToList(arr) {
 
 function listToArray(list, arr) {
   // Add code.
+  arr = Object.keys(list);
+  return arr;
 }
 
 // tests
