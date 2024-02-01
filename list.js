@@ -16,6 +16,11 @@ function listToArray(list, arr) {
   return arr;
 }
 
+function prepend(first, remainder) {
+  return { value: first,
+  rest: remainder};
+}
+
 // tests
 console.log(arrayToList([10, 20]));
 // → {value: 10, rest: {value: 20, rest: null}}
