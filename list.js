@@ -1,21 +1,19 @@
 function arrayToList(arr) {
   // Add code.
-  let list = {
-    value: arr[0],
-    rest: {
-      value: arr[1]
-    }
+  let list = {}
+  for (let i = 0;i < arr.length;i++) {
+    list[i] = arr[i];
   }
   return list;
 }
 
 function listToArray(list, arr) {
   // Add code.
-  let tempArr = [];
+  arr = [];
   for (let node = list; node; node = node.rest) {
-    tempArr.push(node.value);
+    arr.push(node.value);
   }
-  return tempArr;
+  return arr;
 }
 
 // tests
