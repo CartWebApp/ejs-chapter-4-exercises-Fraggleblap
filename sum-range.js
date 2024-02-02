@@ -4,14 +4,15 @@ function range(start, end, step = 1) {
   for (let i = start; i != end; i+= step) {
     returnArray.push(i);
   }
+  returnArray.push(end);
   return returnArray;
 }
 
 function sum(numbers) {
   // Add code.
   let temp = 0;
-  for (let i = numbers[0]; i < numbers[numbers.length-1];i++) {
-    temp += i;
+  for (let i = numbers.length-1; i >= 0;i--) {
+    temp += numbers[i];
   }
   return temp;
 }
