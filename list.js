@@ -11,7 +11,7 @@ function listToArray(list, arr) {
   // Add code.
   arr = [];
   for (let node = list; node; node = node.rest) {
-    arr.push(node.value);
+    arr.push(list);
   }
   return arr;
 }
